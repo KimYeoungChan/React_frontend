@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 문서 구조 시맨틱 태그 사용</title>
+  <style>
+    html,body { margin: 0; padding: 0; height: 100%; }
+    .header {
+      width: 100%; height: 15%;
+      background-color:yellow;
+    }
+    .nav {
+      width: 15%; height: 70%; float: left;
+      background-color:orange;
+    }
+    .section {
+      width: 70%; height: 70%; float: left;
+      background-color:olivedrab;
+    }
+    .aside {
+      width: 15%; height: 70%; float: left;
+      background-color:orange;
+    }
+    .footer {
+      width: 100%; height: 15%; clear: both;
+      background-color:plum;
+    }
+    p {
+      display: inline-block;
+      border:2px solid blue;
+    } 
+  </style>
+</head>
+<body>
+  <header class="header">header
+   <p>
+    &lt;header&gt;<br />
+    페이지나 섹션의 머리말 표현, 페이지 제목, 페이지를 소개하는 간단한설명
+   </p>
+  </header>
+  <nav class="nav">nav
+    <p>
+      &lt;nav&gt;<br />
+      하이퍼링크들을 모아 놓은 특별한 세션, 페이지 내 목차를 만다는 용도
+    </p>
+  </nav>
+  <section class="section">section<br />
+   <p>
+    &lt;section&gt;<br />
+    문서의 장 혹은 절을 구성하는 역할. 일반 문서에 여러 장이 있듯이 웹 페이지에 여러 &lt;section&gt; 가능,<br />
+    헤딩태그(&lt;h1&gt; ~ &lt;h6&gt;)를 사용하여 절 혹은 섹션의 주제 기입
+   </p>
+  </section>
+  <aside class="aside">aside
+    <p>&lt;aside&gt;<br />
+      신문,잡지에서 주요 기사 옆 관련 기사, 삽입어구로 표시된 논편 등 페이지의 오른쪽 이나 왼쪽에 주로 배치한다.
+    </p>  
+  </aside>
+  <footer class="footer">footer<br />
+   <p>
+    &lt;footer&gt;<br />
+    꼬리말 영역, 주로 전화나 저작권 정보
+   </p>
+  </footer>
+</body>
+</html>

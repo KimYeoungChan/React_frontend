@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 폼</title>
+</head>
+<body>
+  <!-- &lt; <꺽쇠
+       &gt; >꺽쇠 특수문자 -->
+    <h3>&lt;label&gt; 태그로 로그인 폼 만들기</h3>
+    <hr />
+    <!-- form 태그로 입력요소들을 한데 묶음
+      전송되는 메소드의 형태가 get인데
+      get도 있고 post도 있다. -->
+    <form name="fo" method="get">
+      <!-- l -->
+      <label>사용자 ID : <input type="text" size="15" value=""></label><br />
+      <label for="pass">비밀번호 : </label>
+      <input type="password" id="pass" size="15" value="" />
+      <!-- submit 활용해 입력 데이터 제출
+      지금은 전송받은 곳이 없으므로 아무런 동작도 되지 않음 / 초기값,공백 -->
+      <input type="submit" value="완료">
+    </form>
+</body>
+</html>
+<!-- <label> 태그 사이에 위치한 text, checkbox, radio 등은 클릭 가능 영역이 텍스트로 확장
+  <label for="">와 <태그 id="">값은 서로 그룹을 형성
+  label 태그는 <input> 태그를 도와주는 역할을 하는데,
+  input 태그 디자인 하기 힘들 떄 <label>로 연결해서 쉽게 디자인하거나, 클릭 편의성을 높일 수 있음
+    
+  <label> 태그는 for속성을 사용해서 <input> 태그의 id 속성에 연계해서 사용함
+  lable for 값과 input id 값 일치 시키면 됨
+-->
