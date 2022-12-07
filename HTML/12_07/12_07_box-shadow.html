@@ -1,0 +1,62 @@
+<!-- box-shadow 프로퍼티
+  박스 전체에 그림자 효과
+  /* background-color : skyblue; -> 배경색 지정 */
+                background-color : skyblue;
+  /* background-size : 100px 200px; -> 배경색 사이즈 지정 */
+                background-size : 100px 200px;
+  /* background-image:; -> 배경 이미지 지정 */
+                background-image:url();
+   /* background-repeat : repeat-y; -> 배경 이미지 연속해서 출력 */
+                background-repeat : repeat-y;
+   /* background-position : center; -> 배경이미지 기본 위치, x축 y축 모두 센터 */
+                background-position : cente
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>div에 박스 그림자 만들기</title>
+  <style>
+
+/* 그림자 x축, 그림자 Y축, 그림자 번짐 정도, 그림자 색 */
+/* x축이 양수면 오른쪽 음수면 왼쪽으로 생김 */
+/* y축이 양수면 오른쪽 음수면 위으로 생김 */
+.redbox {
+  box-shadow: 10px 10px red;
+}
+
+/* 그림자 x축, 그림자 Y축, 그림자 번짐 정도, 그림자 색 */
+  .blurbox {
+    box-shadow: 10px 10px 5px skyblue;
+  }
+/* 그림자 x축, 그림자 Y축, 그림자 번짐 정도, 그림자 색 */
+    .multiEffect {
+      box-shadow:2px 2px 2px black,
+      /* 그림자 번짐과 색 2개씩 추가 */
+        0 0 25px blue,
+        0 0 5px darkblue;
+    }
+    div {
+      /* width, height : 패딩의 가로, 세로 크기라 볼 수 있음 */
+      width: 150px;
+      height: 70px;
+      padding: 10px;
+      border:1px solid lightgray;
+      background-image: url("../media/spongbob.png");
+      background-size:150px 100px;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <h3>박스 그림자 만들기</h3>
+  <hr />
+  <div class="redbox">뚱이와 함께</div>
+  <div class="blurbox">뚱이와 함께</div>
+  <div class="multiEffect">뚱이와 함께</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원 가입 양식</title>
+</head>
+<body>
+  <h3>회원 가입 양식</h3>
+  <form action="">
+    <table>
+      <tr>
+        <td>- 아이디</td>
+        <td><input type="text" name="id" /></td>
+      </tr>
+      <tr>
+        <td>- 비밀번호</td>
+        <td><input type="password" name="pw1" /></td>
+      </tr>
+      <tr>
+        <td>- 비밀번호 확인</td>
+        <td><input type="password" name="pw2" /></td>
+      </tr>
+      <tr>
+        <td>- 이름</td>
+        <td><input type="text" name="name" /></td>
+      </tr>
+      <tr>
+        <td>- 성별</td>
+        <td>
+            <input type="radio" name="w" /> 여성
+            <input type="radio" name="m" /> 남성
+        </td>
+      </tr>
+      <tr>
+        <td>- 전화번호</td>
+        <td> <select name="number1" id="number1">
+          <option value="02">02</option>
+          <option value="02">032</option>
+        </select>
+        - <input type="tel" name="number2" /> - <input type="tel" name="number3" /> </td>
+      </tr>
+      <tr>
+        <td> - 이메일</td>
+        <td><input type="email" name="email" /> @ <select name="domain" id="domain">
+          <option value=""></option>
+          <option value="네이버">naver.com</option>
+          <option value="다음">net</option>
+          <option value="구글">gmail.com</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>- 자기소개</td>
+        <td><textarea cols="60" rows="10"></textarea></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

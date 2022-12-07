@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display - table</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .title_item {
+      display: block;
+      font-size: 1em;
+    }
+    .desc_item {
+      font-size: 0.7em;
+    }
+    .title_item, .desc_item {
+      margin-top: 10px;
+    }
+    .boxwarp {
+      display: table; /* display 형태를 table로 설정 */
+      table-layout:fixed; /* 테이블 고정 */
+      width: 100%;
+    }
+    .boxwarp .box {
+      display: table-cell; /* 부모 속성안에 들어가는 표안의 셀 */
+      vertical-align: middle; /* 셀안의 내용을 세로 가운데정렬 */
+      text-align: center;
+      padding: 10px;
+    }
+    /* 링크 가능 */
+    .box .link {
+      text-decoration-line:none;
+      color:black;
+    }
+    .thumb img {
+      width: 40%;
+    }
+    /* hover의 기능 */
+    .box .link:hover {
+      text-decoration-line: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="boxwarp">
+    <!-- 첫 박스 하단 한 set -->
+    <div class="box">
+      <span class="thumb">
+        <img src="/media/버클샌드.jpg" alt="샌들">
+      </span>
+      <strong class="title_item">여름 샌들</strong>
+      <p class="desc_item">여름에 예쁘고 시원한 샌들</p>
+    </div>
+    <!-- 다른박스 시작지점 -->
+    <div class="box">
+      <span class="thumb">
+        <img src="/media/슬리퍼.jpg" alt="슬리퍼">
+      </span>
+      <strong class="title_item">여름 슬리퍼</strong>
+      <p class="desc_item">여름에 예쁘고 시원한 슬리퍼</p>
+    </div>
+    <div class="box">
+      <span class="thumb">
+        <img src="/media/스니커즈.jpg" alt="스니커즈">
+      </span>
+      <strong class="title_item">스니커즈</strong>
+      <p class="desc_item">여름에 예쁘고 시원한 슬리퍼</p>
+    </div>
+    <div class="box">
+      <span class="thumb">
+        <img src="/media/슬리퍼2.jpg" alt="슬리퍼2">
+      </span>
+      <strong class="title_item">여름 슬리퍼</strong>
+      <p class="desc_item">여름에 예쁘고 시원한 슬리퍼</p>
+    </div>
+  </div>
+</body>
+</html>
