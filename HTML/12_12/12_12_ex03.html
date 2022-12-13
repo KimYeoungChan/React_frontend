@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>논리연산자</title>
+</head>
+<body>
+  <script>
+    var str="korea";
+    document.write(str == "korea" || str == "KOREA" );
+    document.write("<br />");
+    // korea값이 맞고 KOREA 값은 틀리다
+    // 둘중에 하나만 맞아도 true
+    var score = 57;
+    document.write(score >= 70 && score < 90);
+    document.write("<br />");
+    // 70보다 작은건 아니고 90보다 작은 것은 맞다
+    // 둘다 맞아야지 true 그래서 false
+
+    var sign = "true";
+    document.write(!sign); 
+    // !은 역으로 생각을 해서 !true => false
+  </script>
+</body>
+</html>

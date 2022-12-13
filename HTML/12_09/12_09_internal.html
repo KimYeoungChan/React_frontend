@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문서 안에 스크립트 작성</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- head 태그에 script 쓸 경우 defer 값을 써야된다. -->
+  <script defer src="js/changeflg.js"></script>
+</head>
+<body>
+  <p>새로 고침 해보세요</p>
+  <script src="js/changeflg.js"></script>
+</body> 
+</html>
+<!-- 인라인 스크립트와 내부 스크립트 단점
+  같은 자바스크립트 소스를 여러 웹 문서에서 사용해야 할 경우, 필요한 문서만다 똑같은 소스를 반복해서 삽입해야 함.
+  만일 여러 페이지에 삽입한 자바스크립트 소스를 수정해야 한다면 소스가 포함된 모든 문서를 다 찾아다니면서 하나씩 수정해야 함.
+  자바스크립트 소스를 작성할 떄 외부 스크립트 파일로 저장해서 링크하는 방법을 많이 사용함.
+  마크업과 구별되기 떄문에 스크립트 소스를 관리하기 쉬움
+  외부 스크립트 연결해서 사용하기
+  
+  외부 스크립트 파일 확장자 : .js
+  HTML 문서에서  <script> 태그를 사요앻서 외부 스크립으 연결
+  기본형: <script src="스크립트 파일 경로"></script>
+  외부 스크립트 파일 안에는 <script> 태그 없이 자바스크립트 소스만 작성함
+  따로 js 폴더를 만들어 저장하는 것이 좋음(외부 css 파일을 css 폴더에 저장하는 것처럼)
+-->
