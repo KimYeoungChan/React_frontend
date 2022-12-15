@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>별짓기3</title>
+  <link rel="stylesheet" href="/12_09/css/main.css">
+</head>
+<body>
+  <h3>별짓기3</h3>
+  <script>
+    var sum = prompt("숫자를 입력하세요", 5); // sum 변수 입력
+
+    // i=1 이고, i가 sum보다 작거나 같을 때까지, i 증감 연산
+    for( var i=1; i<=sum; i++) {
+      // j가 1이고, j가 sum보다 작거나 같을 때까지, j 증감 연산
+      for( var j=1; j<=sum; j++) {
+        // j값이 sum-i보다 작거나 같을 때
+        if( j <= (sum-i)) document.write("&nbsp"); else document.write("*"); }
+        // &nbsp 띄어쓰기
+            // 그리고 * 작성
+      // 줄바꾼 작성
+      document.write("<br />")
+    }
+  </script>
+</body>
+</html>
